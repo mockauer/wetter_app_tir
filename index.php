@@ -1,12 +1,14 @@
 <?php
+	include("../connect_db.php");
 	
-	include("db_connect.php");
 	
-	
-		$query ="SELECT * FROM `wetter` ORDER BY `wetter`.`datum` DESC ";
+		$query ="SELECT * FROM `wetter` ORDER BY `wetter`.`datum` DESC LIMIT 1";
 		$all=$mysqli->query($query);
 		
 		 while ($dsatz=  $all->fetch_assoc()){
-			  $dsatz['datum'] . " - " . $dsatz['wetter'] . " - ".$dsatz['temperatur'];
+			 echo "Das Wetter vom " . $dsatz['datum']."<br/>";
+			 echo "<strong>".$dsatz['temperatur']."°C</strong><br/>";
+			 echo "<img src='img/".$dsatz['wetter'].".png' />";
 		 }
+
 ?>

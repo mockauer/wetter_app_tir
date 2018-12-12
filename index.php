@@ -18,23 +18,23 @@
 	switch ($zufallszahl){
 		case 0:
 			$wetter = "sonnig";
-			echo "sonnig";
+			echo "<img src='img/sonnig.png' />";
 			break;
 		case 1:
 			$wetter = "leicht bedeckt";
-			echo "leicht bedeckt";
+			echo "<img src='img/leichtbewolkt.png' />";
 			break;
 		case 2:
 			$wetter = "stark bedeckt";
-			echo "stark bedeckt";
+			echo "<img src='img/starkbewolkt.png' />";
 			break;
 		case 3:
 			$wetter = "regen";
-			echo "regen";
+			echo "<img src='img/regen.png' />";
 			break;
 		case 4: 
 			$wetter = "gewitter";
-			echo "gewitter";
+			echo "<img src='img/gewitter.png' />";
 			break;
 		}
 		

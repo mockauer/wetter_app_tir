@@ -1,6 +1,6 @@
 <?php
 	
-	$zufallszahl = rand(0,5);
+	$zufallszahl = rand(0,4);
 	$wetter = "";
 	
 	switch ($zufallszahl){
@@ -20,11 +20,7 @@
 			$wetter = "regen";
 			echo "regen";
 			break;
-		case 4:
-			$wetter = "sturm";
-			echo "sturm";
-			break;
-		case 5: 
+		case 4: 
 			$wetter = "gewitter";
 			echo "gewitter";
 			break;
